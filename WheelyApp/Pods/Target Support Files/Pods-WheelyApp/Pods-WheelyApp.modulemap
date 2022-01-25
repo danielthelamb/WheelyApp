@@ -1,0 +1,6 @@
+framework module Pods_WheelyApp {
+  umbrella header "Pods-WheelyApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

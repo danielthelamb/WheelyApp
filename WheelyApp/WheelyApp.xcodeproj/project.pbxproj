@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BE2DE2721F3BCA80EFA3EE7 /* Pods_WheelyApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23D2FB03A18F6B860596BFC3 /* Pods_WheelyApp.framework */; };
+		8188018C2890467D5ECF1386 /* Pods_WheelyApp_WheelyAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8C062CEEEA264EBD0F5CCC /* Pods_WheelyApp_WheelyAppUITests.framework */; };
 		AB958754279FAC860072EA4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958753279FAC860072EA4D /* AppDelegate.swift */; };
 		AB958756279FAC860072EA4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958755279FAC860072EA4D /* SceneDelegate.swift */; };
 		AB958758279FAC860072EA4D /* OptionsPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958757279FAC860072EA4D /* OptionsPieChartViewController.swift */; };
@@ -19,6 +21,7 @@
 		AB958787279FADAB0072EA4D /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958786279FADAB0072EA4D /* Option.swift */; };
 		AB95878A279FB6900072EA4D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958789279FB6900072EA4D /* UIView.swift */; };
 		AB95878C279FB7E30072EA4D /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95878B279FB7E30072EA4D /* OptionsTableViewController.swift */; };
+		DC8DAA095902F2F01B3413E3 /* Pods_WheelyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8DA1EF6425C79D4961C879 /* Pods_WheelyAppTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23D2FB03A18F6B860596BFC3 /* Pods_WheelyApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheelyApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47FB2439C9D425ADCA4DE03E /* Pods-WheelyAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WheelyAppTests/Pods-WheelyAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AC0F378C97A1C503858A36E /* Pods-WheelyApp-WheelyAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyApp-WheelyAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-WheelyApp-WheelyAppUITests/Pods-WheelyApp-WheelyAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E8DA1EF6425C79D4961C879 /* Pods_WheelyAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheelyAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FC826B02400D314408CFB07 /* Pods-WheelyAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyAppTests.release.xcconfig"; path = "Target Support Files/Pods-WheelyAppTests/Pods-WheelyAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		8765DA077A185B2467C03326 /* Pods-WheelyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyApp.debug.xcconfig"; path = "Target Support Files/Pods-WheelyApp/Pods-WheelyApp.debug.xcconfig"; sourceTree = "<group>"; };
 		AB958750279FAC860072EA4D /* WheelyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB958753279FAC860072EA4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB958755279FAC860072EA4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +64,9 @@
 		AB958786279FADAB0072EA4D /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		AB958789279FB6900072EA4D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		AB95878B279FB7E30072EA4D /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
+		D3B500E95831E3E47B2C2D8D /* Pods-WheelyApp-WheelyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyApp-WheelyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WheelyApp-WheelyAppUITests/Pods-WheelyApp-WheelyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DA8C062CEEEA264EBD0F5CCC /* Pods_WheelyApp_WheelyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheelyApp_WheelyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0497D5FE823D5C8FBA9D7DE /* Pods-WheelyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyApp.release.xcconfig"; path = "Target Support Files/Pods-WheelyApp/Pods-WheelyApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE2DE2721F3BCA80EFA3EE7 /* Pods_WheelyApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8DAA095902F2F01B3413E3 /* Pods_WheelyAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +90,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8188018C2890467D5ECF1386 /* Pods_WheelyApp_WheelyAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AB87D69D1D0DF544EF6E675 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23D2FB03A18F6B860596BFC3 /* Pods_WheelyApp.framework */,
+				DA8C062CEEEA264EBD0F5CCC /* Pods_WheelyApp_WheelyAppUITests.framework */,
+				7E8DA1EF6425C79D4961C879 /* Pods_WheelyAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AB958747279FAC860072EA4D = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +114,8 @@
 				AB958769279FAC8C0072EA4D /* WheelyAppTests */,
 				AB958773279FAC8C0072EA4D /* WheelyAppUITests */,
 				AB958751279FAC860072EA4D /* Products */,
+				E89020F8902BA78809FFE84F /* Pods */,
+				5AB87D69D1D0DF544EF6E675 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +195,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		E89020F8902BA78809FFE84F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8765DA077A185B2467C03326 /* Pods-WheelyApp.debug.xcconfig */,
+				E0497D5FE823D5C8FBA9D7DE /* Pods-WheelyApp.release.xcconfig */,
+				5AC0F378C97A1C503858A36E /* Pods-WheelyApp-WheelyAppUITests.debug.xcconfig */,
+				D3B500E95831E3E47B2C2D8D /* Pods-WheelyApp-WheelyAppUITests.release.xcconfig */,
+				47FB2439C9D425ADCA4DE03E /* Pods-WheelyAppTests.debug.xcconfig */,
+				7FC826B02400D314408CFB07 /* Pods-WheelyAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -175,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB95877A279FAC8C0072EA4D /* Build configuration list for PBXNativeTarget "WheelyApp" */;
 			buildPhases = (
+				6FD5CE1EE12A99D10ADF30E1 /* [CP] Check Pods Manifest.lock */,
 				AB95874C279FAC860072EA4D /* Sources */,
 				AB95874D279FAC860072EA4D /* Frameworks */,
 				AB95874E279FAC860072EA4D /* Resources */,
+				7EC765862D0561F57CF3985A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -192,6 +235,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB95877D279FAC8C0072EA4D /* Build configuration list for PBXNativeTarget "WheelyAppTests" */;
 			buildPhases = (
+				7C22249D82D1491086890F8D /* [CP] Check Pods Manifest.lock */,
 				AB958762279FAC8C0072EA4D /* Sources */,
 				AB958763279FAC8C0072EA4D /* Frameworks */,
 				AB958764279FAC8C0072EA4D /* Resources */,
@@ -210,9 +254,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AB958780279FAC8C0072EA4D /* Build configuration list for PBXNativeTarget "WheelyAppUITests" */;
 			buildPhases = (
+				D0957964A290267DDE301B04 /* [CP] Check Pods Manifest.lock */,
 				AB95876C279FAC8C0072EA4D /* Sources */,
 				AB95876D279FAC8C0072EA4D /* Frameworks */,
 				AB95876E279FAC8C0072EA4D /* Resources */,
+				6B0C5F672D2950936AD70C78 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -293,6 +339,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B0C5F672D2950936AD70C78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheelyApp-WheelyAppUITests/Pods-WheelyApp-WheelyAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheelyApp-WheelyAppUITests/Pods-WheelyApp-WheelyAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WheelyApp-WheelyAppUITests/Pods-WheelyApp-WheelyAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6FD5CE1EE12A99D10ADF30E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheelyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C22249D82D1491086890F8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheelyAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EC765862D0561F57CF3985A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheelyApp/Pods-WheelyApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheelyApp/Pods-WheelyApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WheelyApp/Pods-WheelyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0957964A290267DDE301B04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheelyApp-WheelyAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB95874C279FAC860072EA4D /* Sources */ = {
@@ -478,6 +627,7 @@
 		};
 		AB95877B279FAC8C0072EA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8765DA077A185B2467C03326 /* Pods-WheelyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -506,6 +656,7 @@
 		};
 		AB95877C279FAC8C0072EA4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0497D5FE823D5C8FBA9D7DE /* Pods-WheelyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -534,6 +685,7 @@
 		};
 		AB95877E279FAC8C0072EA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47FB2439C9D425ADCA4DE03E /* Pods-WheelyAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -559,6 +711,7 @@
 		};
 		AB95877F279FAC8C0072EA4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FC826B02400D314408CFB07 /* Pods-WheelyAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +737,7 @@
 		};
 		AB958781279FAC8C0072EA4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AC0F378C97A1C503858A36E /* Pods-WheelyApp-WheelyAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +761,7 @@
 		};
 		AB958782279FAC8C0072EA4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3B500E95831E3E47B2C2D8D /* Pods-WheelyApp-WheelyAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

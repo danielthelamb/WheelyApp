@@ -1,0 +1,6 @@
+framework module Pods_WheelyAppTests {
+  umbrella header "Pods-WheelyAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
