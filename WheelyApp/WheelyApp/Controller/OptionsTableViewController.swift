@@ -7,14 +7,21 @@
 
 import UIKit
 
-class OptionsTableViewController: UITableViewController {
+private let reuseIdentifier = "OptionsTableViewCell"
 
-    let optionManager = OptionManager.shared
+protocol OptionsTableViewProtocol: NSObject {
+    func didAddOption()
+}
+
+class OptionsTableViewController: UITableViewController {
+    
+    weak var delegate: OptionsTableViewProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureNavigationBar()
+        configureTableView()
     }
 
     private func configureNavigationBar() {
@@ -23,6 +30,10 @@ class OptionsTableViewController: UITableViewController {
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddOption))
 
         navigationItem.rightBarButtonItem = addButton
+    }
+    
+    private func configureTableView() {
+        tableView.register(OptionsTableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
     }
     
     @objc func showAddOption() {
@@ -36,8 +47,9 @@ class OptionsTableViewController: UITableViewController {
         
         alertController.addAction((UIAlertAction(title: "Submit", style: .default, handler: { _ in
             if let option = alertController.textFields?[0].text {
-
+                OptionManager().addOption(Option(name: option))
             }
+            self.delegate?.didAddOption()
             self.tableView.reloadData()
         })))
         
@@ -45,7 +57,13 @@ class OptionsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return OptionManager.options.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! OptionsTableViewCell
+        cell.textLabel?.text = OptionManager.options[indexPath.row].name
+        return cell
     }
 
 }

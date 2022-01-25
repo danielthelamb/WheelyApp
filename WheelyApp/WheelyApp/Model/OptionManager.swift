@@ -8,16 +8,10 @@
 import Foundation
 
 struct OptionManager {
-    static let shared = OptionManager()
+    static var options: [Option] = []
     
-    private var options: [Option] = []
-    
-    mutating func addOption(_ option: Option) {
-        options.append(option)
-    }
-    
-    func getAllOptions() -> [Option] {
-        return options
+    func addOption(_ option: Option) {
+        OptionManager.options.append(option)
     }
 
 }
