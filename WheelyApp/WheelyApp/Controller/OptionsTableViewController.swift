@@ -33,7 +33,7 @@ class OptionsTableViewController: UITableViewController {
     }
     
     private func configureTableView() {
-        tableView.register(OptionsTableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: reuseIdentifier)
     }
     
     @objc func showAddOption() {
@@ -61,7 +61,7 @@ class OptionsTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! OptionsTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
         cell.textLabel?.text = OptionManager.options[indexPath.row].name
         return cell
     }
