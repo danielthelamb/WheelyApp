@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import Charts
 
 class OptionsPieChartViewController: UIViewController {
+    
+    let optionManager = OptionManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()

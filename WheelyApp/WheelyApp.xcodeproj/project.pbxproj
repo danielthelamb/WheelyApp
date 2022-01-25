@@ -21,6 +21,7 @@
 		AB958787279FADAB0072EA4D /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958786279FADAB0072EA4D /* Option.swift */; };
 		AB95878A279FB6900072EA4D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958789279FB6900072EA4D /* UIView.swift */; };
 		AB95878C279FB7E30072EA4D /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95878B279FB7E30072EA4D /* OptionsTableViewController.swift */; };
+		AB95878E279FBA670072EA4D /* OptionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95878D279FBA670072EA4D /* OptionManager.swift */; };
 		DC8DAA095902F2F01B3413E3 /* Pods_WheelyAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8DA1EF6425C79D4961C879 /* Pods_WheelyAppTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		AB958786279FADAB0072EA4D /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		AB958789279FB6900072EA4D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		AB95878B279FB7E30072EA4D /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
+		AB95878D279FBA670072EA4D /* OptionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionManager.swift; sourceTree = "<group>"; };
 		D3B500E95831E3E47B2C2D8D /* Pods-WheelyApp-WheelyAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyApp-WheelyAppUITests.release.xcconfig"; path = "Target Support Files/Pods-WheelyApp-WheelyAppUITests/Pods-WheelyApp-WheelyAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DA8C062CEEEA264EBD0F5CCC /* Pods_WheelyApp_WheelyAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheelyApp_WheelyAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0497D5FE823D5C8FBA9D7DE /* Pods-WheelyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheelyApp.release.xcconfig"; path = "Target Support Files/Pods-WheelyApp/Pods-WheelyApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				AB958786279FADAB0072EA4D /* Option.swift */,
+				AB95878D279FBA670072EA4D /* OptionManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -205,7 +208,6 @@
 				47FB2439C9D425ADCA4DE03E /* Pods-WheelyAppTests.debug.xcconfig */,
 				7FC826B02400D314408CFB07 /* Pods-WheelyAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -449,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB95878A279FB6900072EA4D /* UIView.swift in Sources */,
+				AB95878E279FBA670072EA4D /* OptionManager.swift in Sources */,
 				AB958787279FADAB0072EA4D /* Option.swift in Sources */,
 				AB95878C279FB7E30072EA4D /* OptionsTableViewController.swift in Sources */,
 				AB958758279FAC860072EA4D /* OptionsPieChartViewController.swift in Sources */,

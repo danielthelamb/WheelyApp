@@ -9,6 +9,8 @@ import UIKit
 
 class OptionsTableViewController: UITableViewController {
 
+    let optionManager = OptionManager.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +26,22 @@ class OptionsTableViewController: UITableViewController {
     }
     
     @objc func showAddOption() {
+        let alertController = UIAlertController(title: "Add Option", message: "", preferredStyle: .alert)
+        
+        alertController.addTextField { textField in
+            textField.placeholder = "Enter option"
+        }
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        
+        alertController.addAction((UIAlertAction(title: "Submit", style: .default, handler: { _ in
+            if let option = alertController.textFields?[0].text {
 
+            }
+            self.tableView.reloadData()
+        })))
+        
+        present(alertController, animated: true)
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
