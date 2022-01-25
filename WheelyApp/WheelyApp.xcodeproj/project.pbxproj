@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		AB958754279FAC860072EA4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958753279FAC860072EA4D /* AppDelegate.swift */; };
 		AB958756279FAC860072EA4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958755279FAC860072EA4D /* SceneDelegate.swift */; };
-		AB958758279FAC860072EA4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958757279FAC860072EA4D /* ViewController.swift */; };
+		AB958758279FAC860072EA4D /* OptionsPieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958757279FAC860072EA4D /* OptionsPieChartViewController.swift */; };
 		AB95875B279FAC860072EA4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB958759279FAC860072EA4D /* Main.storyboard */; };
 		AB95875D279FAC8B0072EA4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB95875C279FAC8B0072EA4D /* Assets.xcassets */; };
 		AB958760279FAC8B0072EA4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB95875E279FAC8B0072EA4D /* LaunchScreen.storyboard */; };
 		AB95876B279FAC8C0072EA4D /* WheelyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95876A279FAC8C0072EA4D /* WheelyAppTests.swift */; };
 		AB958775279FAC8C0072EA4D /* WheelyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958774279FAC8C0072EA4D /* WheelyAppUITests.swift */; };
 		AB958777279FAC8C0072EA4D /* WheelyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958776279FAC8C0072EA4D /* WheelyAppUITestsLaunchTests.swift */; };
+		AB958787279FADAB0072EA4D /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958786279FADAB0072EA4D /* Option.swift */; };
+		AB95878A279FB6900072EA4D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958789279FB6900072EA4D /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		AB958750279FAC860072EA4D /* WheelyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB958753279FAC860072EA4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AB958755279FAC860072EA4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AB958757279FAC860072EA4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AB958757279FAC860072EA4D /* OptionsPieChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsPieChartViewController.swift; sourceTree = "<group>"; };
 		AB95875A279FAC860072EA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AB95875C279FAC8B0072EA4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AB95875F279FAC8B0072EA4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		AB958770279FAC8C0072EA4D /* WheelyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB958774279FAC8C0072EA4D /* WheelyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyAppUITests.swift; sourceTree = "<group>"; };
 		AB958776279FAC8C0072EA4D /* WheelyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AB958786279FADAB0072EA4D /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
+		AB958789279FB6900072EA4D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,12 @@
 		AB958752279FAC860072EA4D /* WheelyApp */ = {
 			isa = PBXGroup;
 			children = (
+				AB958783279FAD4D0072EA4D /* Model */,
+				AB958785279FAD510072EA4D /* View */,
+				AB958784279FAD4F0072EA4D /* Controller */,
+				AB958788279FAE7A0072EA4D /* Extensions */,
 				AB958753279FAC860072EA4D /* AppDelegate.swift */,
 				AB958755279FAC860072EA4D /* SceneDelegate.swift */,
-				AB958757279FAC860072EA4D /* ViewController.swift */,
-				AB958759279FAC860072EA4D /* Main.storyboard */,
 				AB95875C279FAC8B0072EA4D /* Assets.xcassets */,
 				AB95875E279FAC8B0072EA4D /* LaunchScreen.storyboard */,
 				AB958761279FAC8B0072EA4D /* Info.plist */,
@@ -125,6 +131,38 @@
 				AB958776279FAC8C0072EA4D /* WheelyAppUITestsLaunchTests.swift */,
 			);
 			path = WheelyAppUITests;
+			sourceTree = "<group>";
+		};
+		AB958783279FAD4D0072EA4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB958786279FADAB0072EA4D /* Option.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB958784279FAD4F0072EA4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AB958757279FAC860072EA4D /* OptionsPieChartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AB958785279FAD510072EA4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AB958759279FAC860072EA4D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AB958788279FAE7A0072EA4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB958789279FB6900072EA4D /* UIView.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB958758279FAC860072EA4D /* ViewController.swift in Sources */,
+				AB95878A279FB6900072EA4D /* UIView.swift in Sources */,
+				AB958787279FADAB0072EA4D /* Option.swift in Sources */,
+				AB958758279FAC860072EA4D /* OptionsPieChartViewController.swift in Sources */,
 				AB958754279FAC860072EA4D /* AppDelegate.swift in Sources */,
 				AB958756279FAC860072EA4D /* SceneDelegate.swift in Sources */,
 			);
