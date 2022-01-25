@@ -25,6 +25,7 @@ class OptionsPieChartViewController: UIViewController {
     
     private let pieView: PieChartView = {
         let pieView = PieChartView()
+        pieView.noDataText = "Add options to spin."
         pieView.chartDescription?.enabled = false
         pieView.drawHoleEnabled = false
         pieView.rotationEnabled = true
@@ -32,6 +33,15 @@ class OptionsPieChartViewController: UIViewController {
         pieView.legend.enabled = false
         
         return pieView
+    }()
+    
+    private let arrow: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "arrowtriangle.backward.fill")
+        imageView.tintColor = .black
+        imageView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+        imageView.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        return imageView
     }()
 
     override func viewDidLoad() {
@@ -49,6 +59,10 @@ class OptionsPieChartViewController: UIViewController {
         
         view.addSubview(pieView)
         pieView.anchor(top: view.safeAreaLayoutGuide.topAnchor, left: view.leftAnchor, bottom: spinButton.topAnchor, right: view.rightAnchor, paddingTop: 20, paddingLeft: 20, paddingBottom: 20, paddingRight: 20)
+        
+        view.addSubview(arrow)
+        arrow.centerY(inView: view)
+        arrow.anchor(right: view.rightAnchor, paddingRight: 20)
     }
     
     private func configureNavigationBar() {
@@ -80,7 +94,35 @@ class OptionsPieChartViewController: UIViewController {
     }
     
     @objc func spin() {
+        guard !OptionManager.options.isEmpty else {
+            goToAddOption()
+            return
+        }
         
+        spinButton.isEnabled = false
+        spinButton.isHidden = true
+        resumeLayer(layer: self.pieView.layer)
+        pieView.rotate()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.pauseLayer(layer: self.pieView.layer)
+            self.spinButton.isEnabled = true
+            self.spinButton.isHidden = false
+        }
+        
+    }
+    
+    func pauseLayer(layer: CALayer) {
+        let pausedTime: CFTimeInterval = layer.convertTime(CACurrentMediaTime(), from: nil)
+        layer.speed = 0.0
+        layer.timeOffset = pausedTime
+    }
+    
+    func resumeLayer(layer: CALayer) {
+        layer.speed = 1.0
+        layer.timeOffset = 00
+        layer.beginTime = 0.0
+        let timeSincePause: CFTimeInterval = layer.convertTime(CACurrentMediaTime(), from: nil)
+        layer.beginTime = timeSincePause
     }
 
 }
