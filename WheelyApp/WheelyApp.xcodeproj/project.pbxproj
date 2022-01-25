@@ -18,6 +18,7 @@
 		AB958777279FAC8C0072EA4D /* WheelyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958776279FAC8C0072EA4D /* WheelyAppUITestsLaunchTests.swift */; };
 		AB958787279FADAB0072EA4D /* Option.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958786279FADAB0072EA4D /* Option.swift */; };
 		AB95878A279FB6900072EA4D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB958789279FB6900072EA4D /* UIView.swift */; };
+		AB95878C279FB7E30072EA4D /* OptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB95878B279FB7E30072EA4D /* OptionsTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		AB958776279FAC8C0072EA4D /* WheelyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB958786279FADAB0072EA4D /* Option.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Option.swift; sourceTree = "<group>"; };
 		AB958789279FB6900072EA4D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		AB95878B279FB7E30072EA4D /* OptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				AB958757279FAC860072EA4D /* OptionsPieChartViewController.swift */,
+				AB95878B279FB7E30072EA4D /* OptionsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			files = (
 				AB95878A279FB6900072EA4D /* UIView.swift in Sources */,
 				AB958787279FADAB0072EA4D /* Option.swift in Sources */,
+				AB95878C279FB7E30072EA4D /* OptionsTableViewController.swift in Sources */,
 				AB958758279FAC860072EA4D /* OptionsPieChartViewController.swift in Sources */,
 				AB958754279FAC860072EA4D /* AppDelegate.swift in Sources */,
 				AB958756279FAC860072EA4D /* SceneDelegate.swift in Sources */,

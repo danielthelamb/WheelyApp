@@ -11,11 +11,27 @@ class OptionsPieChartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-        view.backgroundColor = .white
+        configureUI()
+        configureNavigationBar()
     }
 
+    private func configureUI() {
+        view.backgroundColor = .white
+    }
+    
+    private func configureNavigationBar() {
+        navigationItem.title = "Options"
+        
+        let addButton = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(goToAddOption))
+
+        navigationItem.rightBarButtonItem = addButton
+    }
+    
+    @objc func goToAddOption() {
+        let controller = OptionsTableViewController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
 
 }
 
